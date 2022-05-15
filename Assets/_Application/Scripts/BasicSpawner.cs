@@ -95,18 +95,8 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         });
     }
 
-    //public void OnConnectFailed(NetworkRunner runner, NetAddress remoteAddress, NetConnectFailedReason reason)
-    //{
-    //    throw new NotImplementedException();
-    //}
-
     public void OnHostMigration(NetworkRunner runner, HostMigrationToken hostMigrationToken)
     {
         Debug.Log("On Host Migration");
     }
-
-    //public void OnReliableDataReceived(NetworkRunner runner, PlayerRef player, ArraySegment<byte> data)
-    //{
-    //    throw new NotImplementedException();
-    //}
 }
